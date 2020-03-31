@@ -1,28 +1,27 @@
 {
-    "noCi": true,
-    "analyzeCommits": {
-      "preset": "eslint"
-    },
-    "generateNotes": {
-      "preset": "eslint"
-    },
-    "release": {
-      "verifyConditions": [
-        "@semantic-release/changelog",
-        "@semantic-release/npm",
-        "@semantic-release/git"
-      ],
-      "prepare": [
-        "@semantic-release/changelog",
-        "@semantic-release/npm",
+    "branches":  [ "+([0-9])?(.{+([0-9]),x}).x", "master", "next", "release", "next-major",
+        { "name": "beta", "prerelease": true },
+        { "name": "alpha", "prerelease": true }
+       ],
+    "repositoryUrl": "https://github.com/mohamedalaa33/nodejs-hello-world",
+    "debug": "true",
+    "plugins": [
+            "@semantic-release/commit-analyzer", 
+            "@semantic-release/release-notes-generator", 
+            "@semantic-release/github", 
+    [
+    "@semantic-release/changelog",
         {
-          "path": "@semantic-release/git",
-          "npmPublish": false,
-          "assets": [ "package.json" ],
-          "message": "Release: ${nextRelease.version}"
+            "changelogFile": "CHANGELOG.md"
         }
-      ]
-    }
-  }
+    ],
+            ["@semantic-release/npm", {
+                    "npmPublish": false
+            }],
+            ["@semantic-release/git", {  
+            "assets": [ "package.json","package-lock.json", "CHANGELOG.md"], 
+            "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }]
+]
 
-
+}
