@@ -5,8 +5,7 @@
        ],
         "repositoryUrl": "https://github.com/mohamedalaa33/nodejs-hello-world",
         "plugins": [
-            "@semantic-release/commit-analyzer", 
-            "@semantic-release/release-notes-generator"
+            "@semantic-release/commit-analyzer"
         ],
     "noCi": true,
     "release": {
@@ -16,7 +15,6 @@
       ],
         "plugins": [
             "@semantic-release/commit-analyzer",
-            "@semantic-release/release-notes-generator",
             ["@semantic-release/changelog",{
                 "changelogFile": "CHANGELOG.md"
             }],
