@@ -4,7 +4,7 @@
         { "name": "alpha", "prerelease": true }
        ],
         "repositoryUrl": "https://github.com/mohamedalaa33/nodejs-hello-world",
-        plugins: [
+        "plugins": [
             "@semantic-release/commit-analyzer",
             "@semantic-release/npm"
         ],
@@ -27,6 +27,9 @@
             "assets": ["dist/**/*.{js,css}", "docs", "package.json"],
             "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
             }]
-        ]
+        ],
+        "generateNotes" : "@semantic-release/release-notes-generator",
+        "success": false,
+        "fail": false
     }
   }
