@@ -9,16 +9,18 @@
             "@semantic-release/npm"
         ],
     "noCi": true,
-    "release":  {
-        "analyzeCommits": "@semantic-release/commit-analyzer",
-        "verifyConditions": "@semantic-release/npm",
-        "prepare": "@semantic-release/npm",
-        "getLastRelease": "@semantic-release/npm",
-        "generateNotes" : "@semantic-release/release-notes-generator",
-        "publish": "@semantic-release/npm",
-        "branch": "master",
-        "npmPublish": true,
-        "tarballDir": "dist",
-        "assets": "dist/*.tgz"
-      }
+    "release": 
+{
+    "analyzeCommits": "@semantic-release/commit-analyzer",
+    "verifyConditions": "@semantic-release/npm",
+    "prepare": "@semantic-release/npm",
+    "generateNotes" : "@semantic-release/release-notes-generator",
+    "publish": "@semantic-release/npm",
+    "success": false,
+    "fail": false,
+    "branch": "master",
+    "npmPublish": true,
+    "tarballDir": "dist",
+    "assets": "dist/*.tgz"
+  }
   }
