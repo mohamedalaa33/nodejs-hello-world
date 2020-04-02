@@ -9,27 +9,16 @@
             "@semantic-release/npm"
         ],
     "noCi": true,
-    "release": {
-      "verifyConditions": [
-        "@semantic-release/changelog",
-        "@semantic-release/git"
-      ],
-        "plugins": [
-            "@semantic-release/commit-analyzer",
-            ["@semantic-release/changelog",{
-                "changelogFile": "CHANGELOG.md"
-            }],
-            ["@semantic-release/npm", {
-                "npmPublish": false,
-                "tarballDir": "dist"
-            }],
-            ["@semantic-release/git", {
-            "assets": ["dist/**/*.{js,css}", "docs", "package.json"],
-            "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-            }]
-        ],
+    "release":  {
+        "analyzeCommits": "@semantic-release/commit-analyzer",
+        "verifyConditions": "@semantic-release/npm",
+        "prepare": "@semantic-release/npm",
+        "getLastRelease": "@semantic-release/npm",
         "generateNotes" : "@semantic-release/release-notes-generator",
-        "success": false,
-        "fail": false
-    }
+        "publish": "@semantic-release/npm",
+        "branch": "master",
+        "npmPublish": true,
+        "tarballDir": "dist",
+        "assets": "dist/*.tgz"
+      }
   }
