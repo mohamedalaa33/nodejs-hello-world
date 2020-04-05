@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v2.5.0...v3.0.0) (2020-04-05)
+
+
+### Features
+
+* **another testong for breaking change:** another testing for breaking change ([1dc7cfa](https://github.com/mohamedalaa33/nodejs-hello-world/commit/1dc7cfa71e78503ce2ba7fa19b366a9e008d94bc))
+
+
+### BREAKING CHANGES
+
+* **another testong for breaking change:** another testing for breaking change
+
 # [2.5.0](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v2.4.0...v2.5.0) (2020-04-05)
 
 
