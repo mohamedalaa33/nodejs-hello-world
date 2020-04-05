@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v3.0.1...v3.0.2) (2020-04-05)
+
+
+### Bug Fixes
+
+* releaseaazz ([1cdcd43](https://github.com/mohamedalaa33/nodejs-hello-world/commit/1cdcd43fc8aac9eb76e7937313a9ccf74702ecdd))
+
 ## [3.0.1](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v3.0.0...v3.0.1) (2020-04-05)
 
 
