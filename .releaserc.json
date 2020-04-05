@@ -1,4 +1,43 @@
+{
+    "branches":  [ "release_+([0-9])?(.{+([0-9]),x})?(.{+([0-9]),x})", "master", "next", "release", "next-major",
+        { "name": "beta", "prerelease": true },
+        { "name": "alpha", "prerelease": true }
+       ],
+        "repositoryUrl": "https://github.com/mohamedalaa33/nodejs-hello-world",
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/release-notes-generator", 
+            "@semantic-release/github",
+            ["@semantic-release/changelog",{ 
+                "changelogFile": "CHANGELOG.md"
+            }],
+            ["@semantic-release/npm", {
+                    "npmPublish": false
+            }],
+            ["@semantic-release/git", { 
+            "assets": [ "package.json","package-lock.json", "CHANGELOG.md"], 
+            "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}" 
+        }]
+        ],
+    "noCi": true,
+    "release": 
+{
+    "analyzeCommits": "@semantic-release/commit-analyzer",
+    "verifyConditions": "@semantic-release/npm",
+    "prepare": "@semantic-release/npm",
+    "generateNotes" : "@semantic-release/release-notes-generator",
+    "publish": "@semantic-release/npm",
+    "success": false,
+    "fail": false,
+    "branch": "master",
+    "npmPublish": true,
+    "tarballDir": "dist",
+    "assets": "dist/*.tgz"
+  }
+  }
 
+
+  
   {
     "branches":  [ "release_+([0-9])?(.{+([0-9]),x})?(.{+([0-9]),x})", "master", "next", "release", "next-major",
         { "name": "beta", "prerelease": true },
@@ -10,12 +49,9 @@
             "@semantic-release/commit-analyzer",
             "@semantic-release/release-notes-generator", 
             "@semantic-release/github",
-    [
-    "@semantic-release/changelog",
-        {
-            "changelogFile": "CHANGELOG.md"
-        }
-    ],
+            ["@semantic-release/changelog",{ 
+                "changelogFile": "CHANGELOG.md"
+            }],
             ["@semantic-release/npm", {
                     "npmPublish": false
             }],
