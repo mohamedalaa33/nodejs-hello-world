@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v2.4.0...v2.5.0) (2020-04-05)
+
+
+### Features
+
+* testing the breaking change ([76ad320](https://github.com/mohamedalaa33/nodejs-hello-world/commit/76ad3200ad7e2767626278234cc01413f6a6718f))
+
 # [2.4.0](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v2.3.8...v2.4.0) (2020-04-05)
 
 
