@@ -1,3 +1,10 @@
+## [2.3.8](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v2.3.7...v2.3.8) (2020-04-05)
+
+
+### Bug Fixes
+
+* ensuring that everything is ok ([bd6acff](https://github.com/mohamedalaa33/nodejs-hello-world/commit/bd6acffb3e77333b23b8c5f8d8a1c389ca80713f))
+
 ## [2.3.7](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v2.3.6...v2.3.7) (2020-04-05)
 
 
