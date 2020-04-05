@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v2.3.8...v2.4.0) (2020-04-05)
+
+
+### Features
+
+* this is a new feature ([534ad7b](https://github.com/mohamedalaa33/nodejs-hello-world/commit/534ad7b9fe99774755f79b5e34f1111cc2ebc4d2))
+
 ## [2.3.8](https://github.com/mohamedalaa33/nodejs-hello-world/compare/v2.3.7...v2.3.8) (2020-04-05)
 
 

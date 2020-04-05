@@ -1,6 +1,6 @@
 {
   "name": "node-verioning",
-  "version": "2.3.8",
+  "version": "2.4.0",
   "dependencies": {
     "conventional-changelog-eslint": "^3.0.4"
   },
@@ -23,6 +23,3 @@
     }
   }
 }
-
-
-
